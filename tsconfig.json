@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "rootDir": "src/scripts",
+    "outDir": "JS",
+    "sourceMap": false,
+    "declaration": false
+  },
+  "include": [
+    "src/scripts/**/*",
+    "types/**/*"
+  ]
+}

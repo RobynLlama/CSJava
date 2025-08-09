@@ -1,0 +1,16 @@
+{
+  "name": "csjava",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc; dotnet build",
+    "exe": "dotnet run --project src/CSJava/CSJava.csproj"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
