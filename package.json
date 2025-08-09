@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc; dotnet build",
+    "build": "esbuild ./src/scripts/main.js --bundle --platform=node --outfile=./JS/main.js; dotnet build",
     "exe": "dotnet run --project src/CSJava/CSJava.csproj"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "esbuild": "^0.25.8",
     "typescript": "^5.9.2"
   }
 }
