@@ -38,6 +38,6 @@ A VSCode task is configured as the **default build task** (`Ctrl+Shift+B`). Runn
 
 ## Notes
 
-- TypeScript files live in `src/<script name>/*.ts` and compile to `JS/<script name>.js` for execution in the engine
+- TypeScript files live in `src/<script name>/main.ts` and compile to `JS/<script name>.js` for execution in the engine
 - `src/` is the root of typescript resolution so all imports should be relative to it.
 - The C# project hosts the Jint engine and runs the compiled scripts from the `JS` folder
