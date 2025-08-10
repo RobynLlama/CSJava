@@ -1,6 +1,13 @@
-declare namespace ContextWrapper
+interface Network
 {
-  function log(message: any): void;
+  openNetworkPort(port: number, callback: (message: string) => void): boolean;
+  writeToNetworkPort(port: number, message: string): boolean;
 }
 
-declare var Wrapper: typeof ContextWrapper;
+interface ContextWrapper
+{
+  log(message: any): void;
+  network: Network;
+}
+
+declare var Wrapper: ContextWrapper;
