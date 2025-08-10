@@ -6,13 +6,14 @@
     "strict": true,
     "esModuleInterop": true,
     "baseUrl": ".",
-    "rootDir": "src/scripts",
+    "rootDir": "src",
     "outDir": "JS",
     "sourceMap": false,
     "declaration": false
   },
   "include": [
-    "src/scripts/**/*",
-    "types/**/*"
+    "src/**/*",
+    "types/**/*",
+    "src/Script1/context.d.ts"
   ]
 }
