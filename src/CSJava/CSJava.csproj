@@ -11,4 +11,11 @@
     <PackageReference Include="Jint" Version="4.4.1" />
   </ItemGroup>
 
+  <Target Name="BuildScripts" BeforeTargets="Build">
+    <Exec
+      Command="npx esbuild src/Script1/main.ts --bundle --outfile=$(MSBuildStartupDirectory)/JS/script1.js" />
+    <Exec
+      Command="npx esbuild src/Script2/main.ts --bundle --outfile=$(MSBuildStartupDirectory)/JS/script2.js" />
+  </Target>
+
 </Project>
