@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "esbuild ./src/scripts/main.js --bundle --platform=node --outfile=./JS/main.js; dotnet build",
-    "exe": "dotnet run --project src/CSJava/CSJava.csproj"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
