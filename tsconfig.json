@@ -13,7 +13,6 @@
   },
   "include": [
     "src/**/*",
-    "types/**/*",
-    "src/Script1/context.d.ts"
+    "types/**/*"
   ]
 }
