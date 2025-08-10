@@ -12,10 +12,8 @@
   </ItemGroup>
 
   <Target Name="BuildScripts" BeforeTargets="Build">
-    <Exec
-      Command="npx esbuild src/Script1/main.ts --bundle --outfile=$(MSBuildStartupDirectory)/JS/script1.js" />
-    <Exec
-      Command="npx esbuild src/Script2/main.ts --bundle --outfile=$(MSBuildStartupDirectory)/JS/script2.js" />
+    <Exec command="dotnet tool run dotnet-script build-all-scripts.csx "
+      WorkingDirectory="$(MSBuildStartupDirectory)" />
   </Target>
 
 </Project>
