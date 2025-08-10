@@ -12,6 +12,8 @@ class Program
     })
     .SetValue("Wrapper", new ContextWrapper());
 
-    engine.Modules.Import("./main.js");
+    var script = File.ReadAllText("./JS/main.js");
+
+    engine.Execute(script);
   }
 }
