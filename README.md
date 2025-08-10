@@ -6,9 +6,10 @@ CSJava is a learning project about embedding the [Jint](https://github.com/sebas
 
 ### Install dependencies
 
-Run the following to install Node.js dependencies (including TypeScript):
+Run the following to install Node.js dependencies (including TypeScript) and install all required tooling for the build action:
 
 ```bash
+dotnet tool restore
 npm install
 ```
 
